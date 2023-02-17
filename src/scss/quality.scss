@@ -1,0 +1,34 @@
+.quality {
+  .row {
+    background-color: #fafafa;
+  }
+  h2 {
+    color: $color-first;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  p {
+    padding-top: 10px;
+    max-width: 922px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .item {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '|';
+      top: 30px;
+      right: -25px;
+      width: 1px;
+      font-size: 30px;
+      color: $color-secondary;
+    }
+  }
+  .before-none {
+    &::before {
+      display: none;
+    }
+  }
+}

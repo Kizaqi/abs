@@ -1,0 +1,53 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.burger-menu {
+  display: none;
+}
+.main {
+  position: relative;
+  background-image: url(../img/bg-header.jpg);
+  padding: 15px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  &::before {
+    content: '';
+    background: #232626;
+    opacity: 0.95;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .row {
+    z-index: 5;
+    position: relative;
+    .item {
+      h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 60px;
+      }
+      p {
+        color: $color-secondary;
+      }
+    }
+  }
+  .right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+  }
+}

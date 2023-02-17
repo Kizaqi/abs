@@ -1,0 +1,29 @@
+$color-first: #232626;
+$color-secondary: #e1e1e1;
+$font-awesome: 'Font Awesome 6 Free';
+
+a {
+  color: white;
+  font-weight: 500;
+}
+ul {
+  margin-bottom: 0;
+}
+.btn {
+  background: linear-gradient(90deg, #9a762f 0%, #f2c977 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 50px;
+}
+h4 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  color: $color-first;
+}
