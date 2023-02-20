@@ -1,0 +1,25 @@
+.logitics {
+  position: relative;
+  .item {
+    position: relative;
+    z-index: 10;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      width: 30%;
+      background: url(../img/logistics/vectors.svg);
+      height: 100%;
+    }
+  }
+  .bg {
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    z-index: -1;
+  }
+  p {
+    color: $color-secondary;
+  }
+}

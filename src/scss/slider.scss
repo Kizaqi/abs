@@ -1,0 +1,57 @@
+.slider {
+  background: #f8f8f8;
+  h2 {
+    max-width: 581.18px;
+    width: 100%;
+  }
+  .owl-nav {
+    display: none;
+  }
+
+  button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    &:hover {
+      background-color: #9a7530;
+      color: white;
+    }
+  }
+  .previous {
+    color: #9a7530;
+  }
+
+  .next {
+    color: #9a7530;
+  }
+
+  .round {
+    border-radius: 50%;
+  }
+  .item {
+    i {
+      opacity: 0;
+    }
+    &:hover {
+      i {
+        border: 3px solid;
+        border-radius: 30px;
+        color: #f3c977;
+        opacity: 1;
+      }
+    }
+    img {
+      position: relative;
+      border-radius: 10px;
+    }
+
+    p {
+      position: absolute;
+      font-size: 26px;
+      bottom: 0;
+      left: 10px;
+      color: white;
+      font-weight: 600;
+    }
+  }
+}

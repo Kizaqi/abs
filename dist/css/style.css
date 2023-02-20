@@ -129,6 +129,17 @@ h4 {
   color: #232626;
 }
 
+h6 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #e1e1e1;
+}
+
+.mt-5 {
+  margin-top: 15rem !important;
+}
+
 .container {
   max-width: 1330px;
   padding: 0 20px;
@@ -140,7 +151,7 @@ h4 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 100000;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -226,6 +237,155 @@ h4 {
 
 .quality .before-none::before {
   display: none;
+}
+
+.logitics {
+  position: relative;
+}
+
+.logitics .item {
+  position: relative;
+  z-index: 10;
+}
+
+.logitics .item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 30%;
+  background: url(../img/logistics/vectors.svg);
+  height: 100%;
+}
+
+.logitics .bg {
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  z-index: -1;
+}
+
+.logitics p {
+  color: #e1e1e1;
+}
+
+.slider {
+  background: #f8f8f8;
+}
+
+.slider h2 {
+  max-width: 581.18px;
+  width: 100%;
+}
+
+.slider .owl-nav {
+  display: none;
+}
+
+.slider button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.slider button:hover {
+  background-color: #9a7530;
+  color: white;
+}
+
+.slider .previous {
+  color: #9a7530;
+}
+
+.slider .next {
+  color: #9a7530;
+}
+
+.slider .round {
+  border-radius: 50%;
+}
+
+.slider .item i {
+  opacity: 0;
+}
+
+.slider .item:hover i {
+  border: 3px solid;
+  border-radius: 30px;
+  color: #f3c977;
+  opacity: 1;
+}
+
+.slider .item img {
+  position: relative;
+  border-radius: 10px;
+}
+
+.slider .item p {
+  position: absolute;
+  font-size: 26px;
+  bottom: 0;
+  left: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.migration {
+  position: relative;
+}
+
+.migration .left {
+  margin-right: -100px;
+  margin-top: 15%;
+  padding: 100px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.migration .left::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50%;
+  background: url(../img/migrations/vector.svg);
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.migration .left .content {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.migration .left .content .title {
+  color: white;
+}
+
+.migration .left .content p {
+  color: #e1e1e1;
+  line-height: 27px;
+}
+
+.migration .left .content a {
+  margin-top: 25px;
+}
+
+.migration .right {
+  position: relative;
+  height: 100%;
+  background: url(../img/migrations/right.jpg) no-repeat;
+  width: 100%;
+  z-index: -1;
+}
+
+.migration .bg {
+  position: absolute;
+  z-index: -5;
+  top: 8%;
+  right: 10%;
 }
 
 @media (max-width: 1200px) {
@@ -404,3 +564,5 @@ h4 {
 }
 
 .webp .main { background-image: url(../img/bg-header.webp); }
+
+.webp .migration .right { background: url(../img/migrations/right.webp) no-repeat; }
