@@ -1,0 +1,34 @@
+.help {
+  position: relative;
+  background-image: url(../img/bg-header.jpg);
+  padding: 15px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  &::before {
+    content: '';
+    background: #836328;
+    opacity: 0.93;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .row {
+    z-index: 5;
+    position: relative;
+    .item {
+      h2 {
+        color: white;
+        font-weight: 700;
+      }
+    }
+    .title {
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 45px;
+    }
+  }
+}

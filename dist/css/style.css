@@ -39,6 +39,7 @@ body {
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+  line-height: 27px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -70,7 +71,7 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: none;
+  color: #836328;
 }
 
 ul li {
@@ -116,6 +117,15 @@ ul {
   line-height: 20px;
 }
 
+.btn.btn__white {
+  background: white !important;
+  color: #9a762f;
+}
+
+.btn.btn__white:hover {
+  color: #232626;
+}
+
 h2 {
   font-weight: 700;
   font-size: 38px;
@@ -138,6 +148,13 @@ h6 {
 
 .mt-5 {
   margin-top: 15rem !important;
+}
+
+.form-check-input:checked {
+  cursor: pointer;
+  background-color: #9a762f;
+  border-color: #9a762f;
+  border: 1px solid #5d5e5f;
 }
 
 .container {
@@ -190,6 +207,7 @@ h6 {
   color: white;
   font-weight: 700;
   font-size: 60px;
+  margin-top: 30px;
 }
 
 .main .row .item p {
@@ -243,30 +261,50 @@ h6 {
   position: relative;
 }
 
-.logitics .item {
+.logitics .left {
   position: relative;
-  z-index: 10;
+  height: 100%;
+  background: url(../img/finance-01-left.png) no-repeat;
+  width: 100%;
+  z-index: -1;
 }
 
-.logitics .item::before {
+.logitics .content {
+  margin-left: -100px;
+  margin-top: 170px;
+  position: relative;
+}
+
+.logitics .content::before {
   position: absolute;
   content: "";
   top: 0;
   right: 0;
+  bottom: 0;
   width: 30%;
   background: url(../img/logistics/vectors.svg);
   height: 100%;
+}
+
+.logitics .content .item {
+  padding: 32px;
+  margin: 40px;
+}
+
+.logitics .content .title {
+  color: white;
+}
+
+.logitics .content .text {
+  color: #e1e1e1;
+  line-height: 27px;
 }
 
 .logitics .bg {
   position: absolute;
   top: 10%;
   right: 30%;
-  z-index: -1;
-}
-
-.logitics p {
-  color: #e1e1e1;
+  z-index: -5;
 }
 
 .slider {
@@ -386,6 +424,258 @@ h6 {
   z-index: -5;
   top: 8%;
   right: 10%;
+}
+
+.help {
+  position: relative;
+  background-image: url(../img/bg-header.jpg);
+  padding: 15px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.help::before {
+  content: "";
+  background: #836328;
+  opacity: 0.93;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.help .row {
+  z-index: 5;
+  position: relative;
+}
+
+.help .row .item h2 {
+  color: white;
+  font-weight: 700;
+}
+
+.help .row .title {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 45px;
+}
+
+.finance {
+  position: relative;
+}
+
+.finance .left {
+  position: relative;
+  height: 100%;
+  background: url(../img/finance-01-left.png) no-repeat;
+  width: 100%;
+  z-index: -1;
+}
+
+.finance .content {
+  margin-left: -100px;
+  margin-top: 170px;
+  padding: 150px 82px;
+  position: relative;
+}
+
+.finance .content::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 30%;
+  background: url(../img/logistics/vectors.svg);
+  height: 100%;
+}
+
+.finance .content .title {
+  color: white;
+}
+
+.finance .content .text {
+  color: #e1e1e1;
+  line-height: 27px;
+}
+
+.finance .item {
+  max-width: 738.82px;
+  width: 100%;
+  z-index: 10;
+}
+
+.finance .bg {
+  position: absolute;
+  z-index: -5;
+  top: 10%;
+  right: 40%;
+}
+
+.about .item {
+  position: relative;
+  height: 100%;
+}
+
+.about .item::before {
+  content: "";
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(32.04%, #232626), color-stop(112.12%, rgba(35, 38, 38, 0)));
+  background: -o-linear-gradient(bottom, #232626 32.04%, rgba(35, 38, 38, 0) 112.12%);
+  background: linear-gradient(0deg, #232626 32.04%, rgba(35, 38, 38, 0) 112.12%);
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 13px;
+}
+
+.about .item:hover {
+  scale: 1.1;
+  z-index: 100;
+}
+
+.about .item:hover a {
+  color: #f3c977;
+}
+
+.about .item img {
+  width: 100%;
+  height: 100%;
+}
+
+.about .item .data {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  width: 113px;
+  padding: 17px 34.5px;
+  height: 113px;
+  top: 21px;
+  border-radius: 99px;
+  background: #fff;
+}
+
+.about .item .text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.about .item .text h4 {
+  color: white;
+}
+
+.about .item .text p {
+  color: #e1e1e1;
+}
+
+.registration {
+  position: relative;
+  background-image: url(../img/about/bg-reg.jpg);
+  padding: 15px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.registration::before {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(rgba(192, 138, 38, 0.9)), to(#836328));
+  background: -o-linear-gradient(left, rgba(192, 138, 38, 0.9) 0%, #836328 100%);
+  background: linear-gradient(90deg, rgba(192, 138, 38, 0.9) 0%, #836328 100%);
+  opacity: 0.93;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.registration .title {
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+
+.registration .suptitle {
+  max-width: 519.26px;
+  width: 100%;
+  margin: 0 auto;
+  color: #232626;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+}
+
+.registration .form {
+  position: relative;
+  z-index: 5;
+  background: white;
+  max-width: 890.3px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.registration .text {
+  max-width: 844px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.registration .item p {
+  margin-right: 50px;
+}
+
+.registration input[type=text] {
+  padding: 16px 20px;
+  background: #f8f8f8;
+}
+
+.registration input[type=text]::-webkit-input-placeholder {
+  color: #5d5e5f;
+}
+
+.registration input[type=text]::-moz-placeholder {
+  color: #5d5e5f;
+}
+
+.registration input[type=text]:-ms-input-placeholder {
+  color: #5d5e5f;
+}
+
+.registration input[type=text]::-ms-input-placeholder {
+  color: #5d5e5f;
+}
+
+.registration input[type=text]::placeholder {
+  color: #5d5e5f;
+}
+
+.registration select {
+  padding: 16px 20px;
+  background: #f8f8f8;
+  color: #5d5e5f;
+}
+
+.registration textarea {
+  background: #f8f8f8;
+}
+
+.registration .form-floating label {
+  color: #5d5e5f;
+}
+
+.footer {
+  background: #232626;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
 }
 
 @media (max-width: 1200px) {
@@ -565,4 +855,12 @@ h6 {
 
 .webp .main { background-image: url(../img/bg-header.webp); }
 
+.webp .logitics .left { background: url(../img/finance-01-left.webp) no-repeat; }
+
 .webp .migration .right { background: url(../img/migrations/right.webp) no-repeat; }
+
+.webp .help { background-image: url(../img/bg-header.webp); }
+
+.webp .finance .left { background: url(../img/finance-01-left.webp) no-repeat; }
+
+.webp .registration { background-image: url(../img/about/bg-reg.webp); }

@@ -15,7 +15,17 @@ ul {
   font-weight: 600;
   font-size: 17px;
   line-height: 20px;
+  &.btn {
+    &__white {
+      background: white !important;
+      color: #9a762f;
+      &:hover {
+        color: $color-first;
+      }
+    }
+  }
 }
+
 h2 {
   font-weight: 700;
   font-size: 38px;
@@ -35,4 +45,10 @@ h6 {
 }
 .mt-5 {
   margin-top: 15rem !important;
+}
+.form-check-input:checked {
+  cursor: pointer;
+  background-color: #9a762f;
+  border-color: #9a762f;
+  border: 1px solid #5d5e5f;
 }

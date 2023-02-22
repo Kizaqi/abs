@@ -23,7 +23,6 @@ function burgerMenu(selector) {
   }
 }
 $('.owl-carousel').owlCarousel({
-  stagePadding: 260,
   loop: true,
   margin: 10,
   responsiveClass: true,
@@ -33,10 +32,16 @@ $('.owl-carousel').owlCarousel({
       nav: true,
     },
     600: {
-      items: 3,
+      items: 2,
       nav: false,
     },
     1000: {
+      items: 2,
+      nav: true,
+      loop: true,
+    },
+    1440: {
+      stagePadding: 260,
       items: 3,
       nav: true,
       loop: true,
