@@ -3,24 +3,25 @@
   .left {
     margin-right: -100px;
     margin-top: 15%;
-    padding: 100px 0;
-    position: relative;
-    z-index: 10;
-    &::before {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 50%;
-      background: url(../img/migrations/vector.svg);
-      height: 100%;
-      pointer-events: none;
-      z-index: -1;
-    }
+
     .content {
-      max-width: 700px;
-      margin: 0 auto;
+      padding: 100px 100px 200px;
       width: 100%;
+      position: relative;
+      z-index: 10;
+      &::before {
+        position: absolute;
+
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: url(../img/migrations/vector.svg) no-repeat;
+        background-size: cover;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+      }
       .title {
         color: white;
       }

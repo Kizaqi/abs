@@ -2,6 +2,7 @@
   .item {
     position: relative;
     height: 100%;
+    width: 100%;
     &::before {
       content: '';
       background: linear-gradient(0deg, #232626 32.04%, rgba(35, 38, 38, 0) 112.12%);

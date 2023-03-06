@@ -17,8 +17,9 @@
       content: '';
       top: 0;
       right: 0;
-      width: 30%;
-      background: url(../img/logistics/vectors.svg);
+      width: 100%;
+      background: url(../img/logistics/vectors.svg) no-repeat;
+      background-size: cover;
       height: 100%;
     }
 

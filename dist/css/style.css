@@ -264,7 +264,7 @@ h6 {
 .logitics .left {
   position: relative;
   height: 100%;
-  background: url(../img/finance-01-left.png) no-repeat;
+  background: url(../img/logistics/02.jpg) no-repeat;
   width: 100%;
   z-index: -1;
 }
@@ -375,27 +375,26 @@ h6 {
 .migration .left {
   margin-right: -100px;
   margin-top: 15%;
-  padding: 100px 0;
+}
+
+.migration .left .content {
+  padding: 100px 100px 200px;
+  width: 100%;
   position: relative;
   z-index: 10;
 }
 
-.migration .left::before {
+.migration .left .content::before {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
-  width: 50%;
-  background: url(../img/migrations/vector.svg);
+  width: 100%;
+  background: url(../img/migrations/vector.svg) no-repeat;
+  background-size: cover;
   height: 100%;
   pointer-events: none;
   z-index: -1;
-}
-
-.migration .left .content {
-  max-width: 700px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .migration .left .content .title {
@@ -487,8 +486,9 @@ h6 {
   content: "";
   top: 0;
   right: 0;
-  width: 30%;
-  background: url(../img/logistics/vectors.svg);
+  width: 100%;
+  background: url(../img/logistics/vectors.svg) no-repeat;
+  background-size: cover;
   height: 100%;
 }
 
@@ -517,6 +517,7 @@ h6 {
 .about .item {
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 .about .item::before {
@@ -711,7 +712,7 @@ h6 {
   }
 
   .header .burger-menu_button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #9a762f;
   }
 
   .header .burger-menu_lines::before,
@@ -720,7 +721,7 @@ h6 {
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: #bb1e99;
+    background-color: white;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
@@ -778,8 +779,9 @@ h6 {
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: #f9afe9;
+    background-color: #e1e1e1;
     overflow-y: auto;
+    top: -100%;
     right: -100%;
     -webkit-transition: 0.8s;
     -o-transition: 0.8s;
@@ -787,6 +789,7 @@ h6 {
   }
 
   .header .burger-menu_active .burger-menu_nav {
+    top: 0;
     right: 0;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
@@ -801,7 +804,7 @@ h6 {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 400;
-    color: #bb1e99;
+    color: #9a762f;
     border-bottom: 1px solid #fff;
   }
 
@@ -845,6 +848,65 @@ h6 {
     text-transform: uppercase;
     color: #000;
   }
+
+  .logitics .content::before {
+    display: none;
+  }
+
+  .finance .content::before {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .quality .col-lg-2 {
+    text-align: center;
+  }
+
+  .quality .item::before {
+    display: none;
+  }
+
+  .logitics .content {
+    margin-left: 0;
+  }
+
+  .migration .left {
+    margin-right: 0;
+  }
+
+  .migration .left .content {
+    padding: 20px 40px;
+  }
+
+  .finance .content {
+    padding: 0;
+    margin: 0;
+  }
+
+  .about .content {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg {
+    display: none;
+  }
+
+  .about .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .about .item {
+    margin: 20px 0 !important;
+  }
+
+  .about .item img {
+    min-height: 500px;
+    height: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -855,7 +917,7 @@ h6 {
 
 .webp .main { background-image: url(../img/bg-header.webp); }
 
-.webp .logitics .left { background: url(../img/finance-01-left.webp) no-repeat; }
+.webp .logitics .left { background: url(../img/logistics/02.webp) no-repeat; }
 
 .webp .migration .right { background: url(../img/migrations/right.webp) no-repeat; }
 
