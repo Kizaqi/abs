@@ -489,6 +489,7 @@ h6 {
   width: 100%;
   background: url(../img/logistics/vectors.svg) no-repeat;
   background-size: cover;
+  pointer-events: none;
   height: 100%;
 }
 
