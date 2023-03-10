@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 100000;
-  background: rgba(0, 0, 0, 0.2);
+  background: black;
 }
 
 .burger-menu {
@@ -43,6 +43,11 @@
       p {
         color: $color-secondary;
       }
+    }
+  }
+  .rows {
+    img {
+      padding: 15px;
     }
   }
   .right {

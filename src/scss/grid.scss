@@ -26,7 +26,6 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.5);
       -webkit-transition: 0.4s;
       -moz-transition: 0.4s;
       -o-transition: 0.4s;
@@ -227,12 +226,58 @@
       }
     }
   }
+  .main {
+    .rows {
+      max-width: 550px;
+      width: 100%;
+    }
+  }
+  .logitics .content {
+    margin-top: 0;
+    .text {
+      justify-content: center;
+    }
+  }
+  .slider {
+    .navs {
+      display: none;
+    }
+  }
+  .migration {
+    .left {
+      margin-top: 0;
+    }
+  }
 }
 
 @media (max-width: 576px) {
+  h2 {
+    font-size: 28px;
+  }
   .header {
     .burger-menu_nav {
       max-width: unset;
+    }
+  }
+  .main {
+    .row {
+      .item {
+        h1 {
+          font-size: 31px;
+        }
+      }
+    }
+  }
+  .finance {
+    .p-5 {
+      padding: 1rem !important;
+    }
+  }
+  .registration {
+    .item {
+      p {
+        margin-right: 0;
+      }
     }
   }
 }

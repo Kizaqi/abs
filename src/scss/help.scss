@@ -4,6 +4,7 @@
   padding: 15px;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   &::before {
     content: '';

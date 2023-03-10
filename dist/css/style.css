@@ -169,7 +169,7 @@ h6 {
   left: 0;
   right: 0;
   z-index: 100000;
-  background: rgba(0, 0, 0, 0.2);
+  background: black;
 }
 
 .burger-menu {
@@ -212,6 +212,10 @@ h6 {
 
 .main .row .item p {
   color: #e1e1e1;
+}
+
+.main .rows img {
+  padding: 15px;
 }
 
 .main .right {
@@ -333,10 +337,12 @@ h6 {
 
 .slider .previous {
   color: #9a7530;
+  background: black;
 }
 
 .slider .next {
   color: #9a7530;
+  background: black;
 }
 
 .slider .round {
@@ -431,6 +437,7 @@ h6 {
   padding: 15px;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
 }
 
@@ -659,7 +666,7 @@ h6 {
 
 .registration select {
   padding: 16px 20px;
-  background: #f8f8f8;
+  background-color: #f8f8f8;
   color: #5d5e5f;
 }
 
@@ -701,7 +708,6 @@ h6 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
@@ -908,11 +914,50 @@ h6 {
     min-height: 500px;
     height: 100%;
   }
+
+  .main .rows {
+    max-width: 550px;
+    width: 100%;
+  }
+
+  .logitics .content {
+    margin-top: 0;
+  }
+
+  .logitics .content .text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .slider .navs {
+    display: none;
+  }
+
+  .migration .left {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 576px) {
+  h2 {
+    font-size: 28px;
+  }
+
   .header .burger-menu_nav {
     max-width: unset;
+  }
+
+  .main .row .item h1 {
+    font-size: 31px;
+  }
+
+  .finance .p-5 {
+    padding: 1rem !important;
+  }
+
+  .registration .item p {
+    margin-right: 0;
   }
 }
 
